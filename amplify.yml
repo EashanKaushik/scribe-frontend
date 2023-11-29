@@ -12,7 +12,7 @@ frontend:
   artifacts:
     baseDirectory: scribe_amplify/code/build
     files:
-      - 'scribe_amplify/code/**/*'
+      - '**/*'
   cache:
     paths:
       - scribe_amplify/code/node_modules/**/*
