@@ -10,9 +10,9 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: build
+    baseDirectory: scribe_amplify/code/build
     files:
-      - '**/*'
+      - 'scribe_amplify/code/**/*'
   cache:
     paths:
-      - node_modules/**/*
+      - scribe_amplify/code/node_modules/**/*
