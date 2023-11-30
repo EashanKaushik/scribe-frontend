@@ -8,18 +8,18 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: amplify/code/build
+    baseDirectory: scribe_amplify/code/build
     files:
       - '**/*'
   cache:
     paths:
-      - amplify/code/node_modules/**/*
+      - scribe_amplify/code/node_modules/**/*
 
 backend:
   phases:
     preBuild:
       commands:
-        - cd amplify
+        - cd scribe_amplify
         - cd code
     build:
       commands:
