@@ -3,8 +3,6 @@ frontend:
   phases:
     preBuild:
       commands:
-        - cd scribe_amplify
-        - cd code
         - npm ci
     build:
       commands:
