@@ -20,4 +20,4 @@ backend:
 
     build:
       commands:
-        - amplifyPush --simple
+        - amplify publish
