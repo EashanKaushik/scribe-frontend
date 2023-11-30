@@ -1,8 +1,0 @@
-type ScribeMeeting @model @auth(rules: [ { allow: public } ] ){
-  id: ID!
-  meetingID: String!
-  meetingTime: AWSDateTime!
-  isParticipant: Boolean!
-  email: AWSEmail!
-  code: String!
-}
