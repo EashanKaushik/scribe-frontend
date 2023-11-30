@@ -16,3 +16,13 @@ frontend:
   cache:
     paths:
       - scribe_amplify/code/node_modules/**/*
+
+backend:
+  phases:
+    preBuild:
+      commands:
+        - cd scribe_amplify
+        - cd code
+    build:
+      commands:
+        - amplifyPush --simple
