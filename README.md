@@ -1,4 +1,4 @@
-# Setup Frontend using AWS Amplify
+# Scribe Frontend - AWS Amplify
 
 ## One Click
 
