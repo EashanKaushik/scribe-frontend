@@ -13,6 +13,8 @@ frontend:
     build:
       commands:
         - yarn run build
+    postBuild:
+      commands:
         - amplify push
   artifacts:
     baseDirectory: build
