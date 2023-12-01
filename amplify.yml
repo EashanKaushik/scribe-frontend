@@ -13,7 +13,7 @@ frontend:
     build:
       commands:
         - yarn run build
-        - amplifyPush --simple
+        - amplify push
   artifacts:
     baseDirectory: build
     files:
