@@ -19,7 +19,9 @@ import {
   createScribeMeeting as createScribeMeetingMutation,
   deleteScribeMeeting as deleteScribeMeetingMutation,
 } from "./graphql/mutations";
+
 Amplify.configure(config);
+
 const client = generateClient();
 const App = ({ signOut, user }) => {
   const [Meetings, setMeetings] = useState([]);

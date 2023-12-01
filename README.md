@@ -1,14 +1,8 @@
-# Scribe Frontend - AWS Amplify
+# Setup Frontend using AWS Amplify
 
-## Automatic Setup
+## Pre-requisites
 
-<a href="https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/EashanKaushik/scribe-frontend">
-    <img src="https://oneclick.amplifyapp.com/button.svg" alt="Deploy to Amplify Hosting">
-</a>
-
-## Manual Setup
-
-## Create AWS Cloud9 Environment
+### Step 1: AWS Cloud9 Environment
 Create an AWS Cloud9 Environment, use the following configurations:
 
 
@@ -16,7 +10,7 @@ Create an AWS Cloud9 Environment, use the following configurations:
 > *Platform:* Amazon Linux 2 <br>
 
 
-## Create a new IAM User
+### Create a new IAM User
 
 1. Create IAM User, you can follow instruction [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html).
 2. Atttach AWS Managed ***AdministratorAccess-Amplify*** policy to the user.
