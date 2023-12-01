@@ -1,12 +1,14 @@
 # Setup Frontend using AWS Amplify
 
+## Automatic One Click Deployment
 <a href="https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/EashanKaushik/scribe-frontend">
     <img src="https://oneclick.amplifyapp.com/button.svg" alt="Deploy to Amplify Hosting">
 </a>
 
-## Pre-requisites
+## Manual Deployment
+### Pre-requisites
 
-### Step 1: AWS Cloud9 Environment
+#### Step 1: AWS Cloud9 Environment
 Create an AWS Cloud9 Environment, use the following configurations:
 
 
@@ -14,13 +16,13 @@ Create an AWS Cloud9 Environment, use the following configurations:
 > *Platform:* Amazon Linux 2 <br>
 
 
-### Create a new IAM User
+#### Create a new IAM User
 
 1. Create IAM User, you can follow instruction [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html).
 2. Atttach AWS Managed ***AdministratorAccess-Amplify*** policy to the user.
 3. Create Access Keys for Command Line Interface (CLI), you can follow instructions [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey).
 
-## Creat React App
+### Creat React App
 
 Open Cloud9 environment, and run the following commands in the terminal:
 
@@ -32,9 +34,9 @@ cd scribebot-amplify
 npx create-react-app . -y
 ```
 
-## Configure AWS Amplify CLI
+### Configure AWS Amplify CLI
 
-### Step 1: Install Amplify CLI
+#### Step 1: Install Amplify CLI
 
 Install the following packages:
 
@@ -44,7 +46,7 @@ curl -sL https://aws-amplify.github.io/amplify-cli/install | bash && $SHELL
 npm install aws-amplify @aws-amplify/ui-react
 ```
 
-### Step 2: Initialize Amplify App
+#### Step 2: Initialize Amplify App
 
 To add initialize Amplify App, run the following command:
 
@@ -61,7 +63,7 @@ Answer the following questions
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;secretAccessKey:  **************************************** <br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;region:  **<region>** <br>
 
-## Add Authentication
+### Add Authentication
 
 1. To add a Cognito Authenticaion, we can use the following command:
 
@@ -86,7 +88,7 @@ import config from './aws-exports';
 Amplify.configure(config);
 ```
 
-## Add API - GraphQL
+### Add API - GraphQL
 
 1. To add a GraphQl API, we can use the following command:
 
@@ -115,7 +117,7 @@ type ScribeMeeting @model @auth(rules: [ { allow: public } ] ){
 }
 ```
 
-## Replace src/App.js code
+### Replace src/App.js code
 
 Replace contents of **src/App.js** with: 
 
@@ -313,7 +315,7 @@ export default withAuthenticator(App, {
 });
 
 ```
-## Add Hosting
+### Add Hosting
 
 Run the following command: 
 
@@ -326,7 +328,7 @@ Answer the following questions
 > Select the plugin module to execute: **Hosting with Amplify Console (Managed hosting with custom domains, Continuous deployment)** <br>
 > Choose a type: **Manual deployment** <br>
 
-## Deploy Web Application
+### Deploy Web Application
 
 Run the following command: 
 
