@@ -92,7 +92,9 @@ Amplify.configure(config);
 
 1. To add a GraphQl API, we can use the following command:
 
-```amplify add api ```
+```
+amplify add api
+```
 
 Answer the following questions
 
@@ -332,7 +334,9 @@ Answer the following questions
 
 Run the following command: 
 
-```amplify publish```
+```
+amplify publish
+```
 
 Answer the following questions
 
